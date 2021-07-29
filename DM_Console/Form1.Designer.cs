@@ -95,6 +95,7 @@ namespace DM_Console
             this.tabNote = new System.Windows.Forms.TabPage();
             this.btnDeleteNote = new System.Windows.Forms.Button();
             this.btnCreateNote = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -243,6 +244,7 @@ namespace DM_Console
             // 
             this.panSlotOne.BackColor = System.Drawing.SystemColors.Control;
             this.panSlotOne.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panSlotOne.Controls.Add(this.button1);
             this.panSlotOne.Controls.Add(this.textBox7);
             this.panSlotOne.Controls.Add(this.textBox6);
             this.panSlotOne.Controls.Add(this.textBox5);
@@ -577,23 +579,23 @@ namespace DM_Console
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(222, 0);
+            this.label1.Location = new System.Drawing.Point(130, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 16);
+            this.label1.Size = new System.Drawing.Size(174, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Type
             // 
-            this.Type.AutoSize = true;
             this.Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Type.Location = new System.Drawing.Point(49, 0);
+            this.Type.Location = new System.Drawing.Point(3, 0);
             this.Type.Name = "Type";
-            this.Type.Size = new System.Drawing.Size(40, 16);
+            this.Type.Size = new System.Drawing.Size(121, 16);
             this.Type.TabIndex = 8;
             this.Type.Text = "Type";
+            this.Type.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox2
             // 
@@ -610,7 +612,7 @@ namespace DM_Console
             this.textBox1.Location = new System.Drawing.Point(130, 19);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 28);
+            this.textBox1.Size = new System.Drawing.Size(174, 28);
             this.textBox1.TabIndex = 1;
             // 
             // comboBox1
@@ -801,6 +803,16 @@ namespace DM_Console
             this.btnCreateNote.Text = "Create";
             this.btnCreateNote.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.Location = new System.Drawing.Point(313, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 28);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FrmConsole
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -898,6 +910,7 @@ namespace DM_Console
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button1;
     }
 }
 
