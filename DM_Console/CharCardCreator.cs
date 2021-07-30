@@ -10,17 +10,21 @@ using System.Windows.Forms;
 
 namespace DM_Console
 {
-    public partial class FrmConsole : Form
+    public partial class CharCardCreator : Form
     {
-        public FrmConsole()
+        public CharCardCreator()
         {
             InitializeComponent();
         }
 
-        private void btnCreate_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            Form CharCard = new CharCardCreator();
-            CharCard.Show();
+            Close();
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
