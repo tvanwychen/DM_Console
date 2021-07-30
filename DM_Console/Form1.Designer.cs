@@ -42,31 +42,31 @@ namespace DM_Console
             this.panSlotFive = new System.Windows.Forms.Panel();
             this.panSlotTwo = new System.Windows.Forms.Panel();
             this.panSlotOne = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.txtCharisma = new System.Windows.Forms.TextBox();
+            this.txtWisdom = new System.Windows.Forms.TextBox();
+            this.txtIntelligence = new System.Windows.Forms.TextBox();
+            this.txtConstitution = new System.Windows.Forms.TextBox();
+            this.txtDexterity = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtSpeed = new System.Windows.Forms.TextBox();
+            this.txtInitiative = new System.Windows.Forms.TextBox();
+            this.txtArmorClass = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.gbxSavingThrows = new System.Windows.Forms.GroupBox();
+            this.cbxFailThree = new System.Windows.Forms.CheckBox();
+            this.cbxFailTwo = new System.Windows.Forms.CheckBox();
+            this.cbxFailOne = new System.Windows.Forms.CheckBox();
+            this.cbxSuccessOne = new System.Windows.Forms.CheckBox();
+            this.cbxSuccessThree = new System.Windows.Forms.CheckBox();
+            this.cbxSuccessTwo = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtHitPoints = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtAdditionalDetails = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -75,10 +75,12 @@ namespace DM_Console
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Type = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtStrength = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.cmbType = new System.Windows.Forms.ComboBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.lblNoteTitle = new System.Windows.Forms.Label();
+            this.btnCreate = new System.Windows.Forms.Button();
             this.txtNotes = new System.Windows.Forms.RichTextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPlayer = new System.Windows.Forms.TabPage();
@@ -86,16 +88,14 @@ namespace DM_Console
             this.tabBoss = new System.Windows.Forms.TabPage();
             this.tabEnemy = new System.Windows.Forms.TabPage();
             this.tabNote = new System.Windows.Forms.TabPage();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnCreate = new System.Windows.Forms.Button();
-            this.btnCreatNote = new System.Windows.Forms.Button();
             this.btnDeletNote = new System.Windows.Forms.Button();
+            this.btnCreatNote = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panSlotOne.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbxSavingThrows.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.tabNote.SuspendLayout();
             this.SuspendLayout();
@@ -236,23 +236,23 @@ namespace DM_Console
             // 
             this.panSlotOne.BackColor = System.Drawing.SystemColors.Control;
             this.panSlotOne.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panSlotOne.Controls.Add(this.button1);
-            this.panSlotOne.Controls.Add(this.textBox7);
-            this.panSlotOne.Controls.Add(this.textBox6);
-            this.panSlotOne.Controls.Add(this.textBox5);
-            this.panSlotOne.Controls.Add(this.textBox4);
-            this.panSlotOne.Controls.Add(this.textBox3);
+            this.panSlotOne.Controls.Add(this.btnClear);
+            this.panSlotOne.Controls.Add(this.txtCharisma);
+            this.panSlotOne.Controls.Add(this.txtWisdom);
+            this.panSlotOne.Controls.Add(this.txtIntelligence);
+            this.panSlotOne.Controls.Add(this.txtConstitution);
+            this.panSlotOne.Controls.Add(this.txtDexterity);
             this.panSlotOne.Controls.Add(this.label14);
             this.panSlotOne.Controls.Add(this.label13);
             this.panSlotOne.Controls.Add(this.label12);
-            this.panSlotOne.Controls.Add(this.textBox11);
-            this.panSlotOne.Controls.Add(this.textBox10);
-            this.panSlotOne.Controls.Add(this.textBox9);
+            this.panSlotOne.Controls.Add(this.txtSpeed);
+            this.panSlotOne.Controls.Add(this.txtInitiative);
+            this.panSlotOne.Controls.Add(this.txtArmorClass);
             this.panSlotOne.Controls.Add(this.label11);
-            this.panSlotOne.Controls.Add(this.groupBox1);
-            this.panSlotOne.Controls.Add(this.textBox8);
+            this.panSlotOne.Controls.Add(this.gbxSavingThrows);
+            this.panSlotOne.Controls.Add(this.txtHitPoints);
             this.panSlotOne.Controls.Add(this.label8);
-            this.panSlotOne.Controls.Add(this.richTextBox1);
+            this.panSlotOne.Controls.Add(this.txtAdditionalDetails);
             this.panSlotOne.Controls.Add(this.label7);
             this.panSlotOne.Controls.Add(this.label6);
             this.panSlotOne.Controls.Add(this.label5);
@@ -261,73 +261,73 @@ namespace DM_Console
             this.panSlotOne.Controls.Add(this.label2);
             this.panSlotOne.Controls.Add(this.label1);
             this.panSlotOne.Controls.Add(this.Type);
-            this.panSlotOne.Controls.Add(this.textBox2);
-            this.panSlotOne.Controls.Add(this.textBox1);
-            this.panSlotOne.Controls.Add(this.comboBox1);
+            this.panSlotOne.Controls.Add(this.txtStrength);
+            this.panSlotOne.Controls.Add(this.txtName);
+            this.panSlotOne.Controls.Add(this.cmbType);
             this.panSlotOne.Location = new System.Drawing.Point(3, 3);
             this.panSlotOne.Name = "panSlotOne";
             this.panSlotOne.Size = new System.Drawing.Size(374, 333);
             this.panSlotOne.TabIndex = 1;
             // 
-            // button1
+            // btnClear
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(313, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 28);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnClear.BackColor = System.Drawing.Color.Firebrick;
+            this.btnClear.Location = new System.Drawing.Point(313, 19);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(53, 28);
+            this.btnClear.TabIndex = 38;
+            this.btnClear.Text = "X";
+            this.btnClear.UseVisualStyleBackColor = false;
             // 
-            // textBox7
+            // txtCharisma
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(313, 72);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(53, 36);
-            this.textBox7.TabIndex = 37;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCharisma.Location = new System.Drawing.Point(313, 72);
+            this.txtCharisma.Multiline = true;
+            this.txtCharisma.Name = "txtCharisma";
+            this.txtCharisma.Size = new System.Drawing.Size(53, 36);
+            this.txtCharisma.TabIndex = 37;
+            this.txtCharisma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // txtWisdom
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(251, 72);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(53, 36);
-            this.textBox6.TabIndex = 36;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtWisdom.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWisdom.Location = new System.Drawing.Point(251, 72);
+            this.txtWisdom.Multiline = true;
+            this.txtWisdom.Name = "txtWisdom";
+            this.txtWisdom.Size = new System.Drawing.Size(53, 36);
+            this.txtWisdom.TabIndex = 36;
+            this.txtWisdom.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txtIntelligence
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(189, 72);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(53, 36);
-            this.textBox5.TabIndex = 35;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIntelligence.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIntelligence.Location = new System.Drawing.Point(189, 72);
+            this.txtIntelligence.Multiline = true;
+            this.txtIntelligence.Name = "txtIntelligence";
+            this.txtIntelligence.Size = new System.Drawing.Size(53, 36);
+            this.txtIntelligence.TabIndex = 35;
+            this.txtIntelligence.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // txtConstitution
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(127, 72);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(53, 36);
-            this.textBox4.TabIndex = 34;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtConstitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConstitution.Location = new System.Drawing.Point(127, 72);
+            this.txtConstitution.Multiline = true;
+            this.txtConstitution.Name = "txtConstitution";
+            this.txtConstitution.Size = new System.Drawing.Size(53, 36);
+            this.txtConstitution.TabIndex = 34;
+            this.txtConstitution.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtDexterity
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(65, 72);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(53, 36);
-            this.textBox3.TabIndex = 33;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDexterity.Location = new System.Drawing.Point(65, 72);
+            this.txtDexterity.Multiline = true;
+            this.txtDexterity.Name = "txtDexterity";
+            this.txtDexterity.Size = new System.Drawing.Size(53, 36);
+            this.txtDexterity.TabIndex = 33;
+            this.txtDexterity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -359,35 +359,35 @@ namespace DM_Console
             this.label12.Text = "AC";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox11
+            // txtSpeed
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(180, 145);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(53, 34);
-            this.textBox11.TabIndex = 29;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSpeed.Location = new System.Drawing.Point(180, 145);
+            this.txtSpeed.Multiline = true;
+            this.txtSpeed.Name = "txtSpeed";
+            this.txtSpeed.Size = new System.Drawing.Size(53, 34);
+            this.txtSpeed.TabIndex = 29;
+            this.txtSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // txtInitiative
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(121, 145);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(53, 34);
-            this.textBox10.TabIndex = 28;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtInitiative.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInitiative.Location = new System.Drawing.Point(121, 145);
+            this.txtInitiative.Multiline = true;
+            this.txtInitiative.Name = "txtInitiative";
+            this.txtInitiative.Size = new System.Drawing.Size(53, 34);
+            this.txtInitiative.TabIndex = 28;
+            this.txtInitiative.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // txtArmorClass
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(62, 145);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(53, 34);
-            this.textBox9.TabIndex = 27;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtArmorClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArmorClass.Location = new System.Drawing.Point(62, 145);
+            this.txtArmorClass.Multiline = true;
+            this.txtArmorClass.Name = "txtArmorClass";
+            this.txtArmorClass.Size = new System.Drawing.Size(53, 34);
+            this.txtArmorClass.TabIndex = 27;
+            this.txtArmorClass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -399,77 +399,77 @@ namespace DM_Console
             this.label11.Text = "HP";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // groupBox1
+            // gbxSavingThrows
             // 
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(238, 122);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(128, 57);
-            this.groupBox1.TabIndex = 22;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Saving Throws";
+            this.gbxSavingThrows.Controls.Add(this.cbxFailThree);
+            this.gbxSavingThrows.Controls.Add(this.cbxFailTwo);
+            this.gbxSavingThrows.Controls.Add(this.cbxFailOne);
+            this.gbxSavingThrows.Controls.Add(this.cbxSuccessOne);
+            this.gbxSavingThrows.Controls.Add(this.cbxSuccessThree);
+            this.gbxSavingThrows.Controls.Add(this.cbxSuccessTwo);
+            this.gbxSavingThrows.Controls.Add(this.label10);
+            this.gbxSavingThrows.Controls.Add(this.label9);
+            this.gbxSavingThrows.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbxSavingThrows.Location = new System.Drawing.Point(238, 122);
+            this.gbxSavingThrows.Name = "gbxSavingThrows";
+            this.gbxSavingThrows.Size = new System.Drawing.Size(128, 57);
+            this.gbxSavingThrows.TabIndex = 22;
+            this.gbxSavingThrows.TabStop = false;
+            this.gbxSavingThrows.Text = "Saving Throws";
             // 
-            // checkBox6
+            // cbxFailThree
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(110, 34);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(15, 14);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.cbxFailThree.AutoSize = true;
+            this.cbxFailThree.Location = new System.Drawing.Point(110, 34);
+            this.cbxFailThree.Name = "cbxFailThree";
+            this.cbxFailThree.Size = new System.Drawing.Size(15, 14);
+            this.cbxFailThree.TabIndex = 15;
+            this.cbxFailThree.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // cbxFailTwo
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(89, 34);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(15, 14);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbxFailTwo.AutoSize = true;
+            this.cbxFailTwo.Location = new System.Drawing.Point(89, 34);
+            this.cbxFailTwo.Name = "cbxFailTwo";
+            this.cbxFailTwo.Size = new System.Drawing.Size(15, 14);
+            this.cbxFailTwo.TabIndex = 14;
+            this.cbxFailTwo.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // cbxFailOne
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(68, 34);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(15, 14);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbxFailOne.AutoSize = true;
+            this.cbxFailOne.Location = new System.Drawing.Point(68, 34);
+            this.cbxFailOne.Name = "cbxFailOne";
+            this.cbxFailOne.Size = new System.Drawing.Size(15, 14);
+            this.cbxFailOne.TabIndex = 13;
+            this.cbxFailOne.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cbxSuccessOne
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(68, 15);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(15, 14);
-            this.checkBox3.TabIndex = 12;
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbxSuccessOne.AutoSize = true;
+            this.cbxSuccessOne.Location = new System.Drawing.Point(68, 15);
+            this.cbxSuccessOne.Name = "cbxSuccessOne";
+            this.cbxSuccessOne.Size = new System.Drawing.Size(15, 14);
+            this.cbxSuccessOne.TabIndex = 12;
+            this.cbxSuccessOne.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // cbxSuccessThree
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(110, 15);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(15, 14);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbxSuccessThree.AutoSize = true;
+            this.cbxSuccessThree.Location = new System.Drawing.Point(110, 15);
+            this.cbxSuccessThree.Name = "cbxSuccessThree";
+            this.cbxSuccessThree.Size = new System.Drawing.Size(15, 14);
+            this.cbxSuccessThree.TabIndex = 11;
+            this.cbxSuccessThree.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // cbxSuccessTwo
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(89, 15);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbxSuccessTwo.AutoSize = true;
+            this.cbxSuccessTwo.Location = new System.Drawing.Point(89, 15);
+            this.cbxSuccessTwo.Name = "cbxSuccessTwo";
+            this.cbxSuccessTwo.Size = new System.Drawing.Size(15, 14);
+            this.cbxSuccessTwo.TabIndex = 10;
+            this.cbxSuccessTwo.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -491,15 +491,15 @@ namespace DM_Console
             this.label9.TabIndex = 8;
             this.label9.Text = "Successes:";
             // 
-            // textBox8
+            // txtHitPoints
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(3, 145);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(53, 34);
-            this.textBox8.TabIndex = 18;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtHitPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHitPoints.Location = new System.Drawing.Point(3, 145);
+            this.txtHitPoints.Multiline = true;
+            this.txtHitPoints.Name = "txtHitPoints";
+            this.txtHitPoints.Size = new System.Drawing.Size(53, 34);
+            this.txtHitPoints.TabIndex = 18;
+            this.txtHitPoints.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -511,13 +511,13 @@ namespace DM_Console
             this.label8.Text = "Additional Details";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox1
+            // txtAdditionalDetails
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 203);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(363, 123);
-            this.richTextBox1.TabIndex = 16;
-            this.richTextBox1.Text = "";
+            this.txtAdditionalDetails.Location = new System.Drawing.Point(3, 203);
+            this.txtAdditionalDetails.Name = "txtAdditionalDetails";
+            this.txtAdditionalDetails.Size = new System.Drawing.Size(363, 123);
+            this.txtAdditionalDetails.TabIndex = 16;
+            this.txtAdditionalDetails.Text = "";
             // 
             // label7
             // 
@@ -599,31 +599,41 @@ namespace DM_Console
             this.Type.Text = "Type";
             this.Type.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtStrength
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(3, 72);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(53, 36);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStrength.Location = new System.Drawing.Point(3, 72);
+            this.txtStrength.Multiline = true;
+            this.txtStrength.Name = "txtStrength";
+            this.txtStrength.Size = new System.Drawing.Size(53, 36);
+            this.txtStrength.TabIndex = 2;
+            this.txtStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 19);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 28);
-            this.textBox1.TabIndex = 1;
+            this.txtName.Location = new System.Drawing.Point(130, 19);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(174, 28);
+            this.txtName.TabIndex = 1;
             // 
-            // comboBox1
+            // cmbType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(3, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 0;
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Location = new System.Drawing.Point(3, 19);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(121, 28);
+            this.cmbType.TabIndex = 0;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(209, 968);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(177, 36);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lblNoteTitle
             // 
@@ -634,6 +644,16 @@ namespace DM_Console
             this.lblNoteTitle.TabIndex = 2;
             this.lblNoteTitle.Text = "Notes";
             this.lblNoteTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnCreate
+            // 
+            this.btnCreate.Location = new System.Drawing.Point(14, 968);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(177, 36);
+            this.btnCreate.TabIndex = 0;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // txtNotes
             // 
@@ -707,25 +727,15 @@ namespace DM_Console
             this.tabNote.Text = "Notes";
             this.tabNote.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // btnDeletNote
             // 
-            this.btnDelete.Location = new System.Drawing.Point(209, 968);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(177, 36);
-            this.btnDelete.TabIndex = 3;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.Location = new System.Drawing.Point(14, 968);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(177, 36);
-            this.btnCreate.TabIndex = 0;
-            this.btnCreate.Text = "Create";
-            this.btnCreate.UseVisualStyleBackColor = true;
-            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            this.btnDeletNote.Location = new System.Drawing.Point(7, 146);
+            this.btnDeletNote.Name = "btnDeletNote";
+            this.btnDeletNote.Size = new System.Drawing.Size(117, 27);
+            this.btnDeletNote.TabIndex = 4;
+            this.btnDeletNote.Text = "Delete";
+            this.btnDeletNote.UseVisualStyleBackColor = true;
+            this.btnDeletNote.Click += new System.EventHandler(this.btnDeletNote_Click);
             // 
             // btnCreatNote
             // 
@@ -736,16 +746,6 @@ namespace DM_Console
             this.btnCreatNote.Text = "Create";
             this.btnCreatNote.UseVisualStyleBackColor = true;
             this.btnCreatNote.Click += new System.EventHandler(this.btnCreatNote_Click);
-            // 
-            // btnDeletNote
-            // 
-            this.btnDeletNote.Location = new System.Drawing.Point(7, 146);
-            this.btnDeletNote.Name = "btnDeletNote";
-            this.btnDeletNote.Size = new System.Drawing.Size(117, 27);
-            this.btnDeletNote.TabIndex = 4;
-            this.btnDeletNote.Text = "Delete";
-            this.btnDeletNote.UseVisualStyleBackColor = true;
-            this.btnDeletNote.Click += new System.EventHandler(this.btnDeletNote_Click);
             // 
             // FrmConsole
             // 
@@ -764,8 +764,8 @@ namespace DM_Console
             this.splitContainer1.ResumeLayout(false);
             this.panSlotOne.ResumeLayout(false);
             this.panSlotOne.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbxSavingThrows.ResumeLayout(false);
+            this.gbxSavingThrows.PerformLayout();
             this.tabControl.ResumeLayout(false);
             this.tabNote.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -795,9 +795,9 @@ namespace DM_Console
         private System.Windows.Forms.Panel panSlotNine;
         private System.Windows.Forms.Panel panSlotSix;
         private System.Windows.Forms.Panel panSlotFive;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ComboBox cmbType;
+        private System.Windows.Forms.TextBox txtStrength;
         private System.Windows.Forms.Label Type;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -807,30 +807,30 @@ namespace DM_Console
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.RichTextBox txtAdditionalDetails;
+        private System.Windows.Forms.GroupBox gbxSavingThrows;
+        private System.Windows.Forms.TextBox txtHitPoints;
+        private System.Windows.Forms.CheckBox cbxFailThree;
+        private System.Windows.Forms.CheckBox cbxFailTwo;
+        private System.Windows.Forms.CheckBox cbxFailOne;
+        private System.Windows.Forms.CheckBox cbxSuccessOne;
+        private System.Windows.Forms.CheckBox cbxSuccessThree;
+        private System.Windows.Forms.CheckBox cbxSuccessTwo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtSpeed;
+        private System.Windows.Forms.TextBox txtInitiative;
+        private System.Windows.Forms.TextBox txtArmorClass;
+        private System.Windows.Forms.TextBox txtCharisma;
+        private System.Windows.Forms.TextBox txtWisdom;
+        private System.Windows.Forms.TextBox txtIntelligence;
+        private System.Windows.Forms.TextBox txtConstitution;
+        private System.Windows.Forms.TextBox txtDexterity;
+        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnDeletNote;

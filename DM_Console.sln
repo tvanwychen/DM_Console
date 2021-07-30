@@ -9,6 +9,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DM_Console.DB", "DM_Console
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM_Console.PL", "DM_Console.PL\DM_Console.PL.csproj", "{1994F726-FF99-432A-BEBF-DD0E163E79AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM_Console.BL.Models", "DM_Console.BL.Models\DM_Console.BL.Models.csproj", "{A5742B4C-37C3-4314-AEC1-E7AEF939D10C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{1994F726-FF99-432A-BEBF-DD0E163E79AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1994F726-FF99-432A-BEBF-DD0E163E79AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1994F726-FF99-432A-BEBF-DD0E163E79AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5742B4C-37C3-4314-AEC1-E7AEF939D10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5742B4C-37C3-4314-AEC1-E7AEF939D10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5742B4C-37C3-4314-AEC1-E7AEF939D10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5742B4C-37C3-4314-AEC1-E7AEF939D10C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
