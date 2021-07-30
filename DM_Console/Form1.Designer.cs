@@ -42,6 +42,7 @@ namespace DM_Console
             this.panSlotFive = new System.Windows.Forms.Panel();
             this.panSlotTwo = new System.Windows.Forms.Panel();
             this.panSlotOne = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -81,21 +82,12 @@ namespace DM_Console
             this.txtNotes = new System.Windows.Forms.RichTextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPlayer = new System.Windows.Forms.TabPage();
-            this.btnDeletePlayer = new System.Windows.Forms.Button();
-            this.btnCreatePlayer = new System.Windows.Forms.Button();
             this.tabNPC = new System.Windows.Forms.TabPage();
-            this.btnDeleteNPC = new System.Windows.Forms.Button();
-            this.btnCreateNPC = new System.Windows.Forms.Button();
             this.tabBoss = new System.Windows.Forms.TabPage();
-            this.btnDeleteBoss = new System.Windows.Forms.Button();
-            this.btnCreateBoss = new System.Windows.Forms.Button();
             this.tabEnemy = new System.Windows.Forms.TabPage();
-            this.btnDeleteEnemy = new System.Windows.Forms.Button();
-            this.btnCreateEnemy = new System.Windows.Forms.Button();
             this.tabNote = new System.Windows.Forms.TabPage();
-            this.btnDeleteNote = new System.Windows.Forms.Button();
-            this.btnCreateNote = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnCreate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -103,11 +95,6 @@ namespace DM_Console
             this.panSlotOne.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl.SuspendLayout();
-            this.tabPlayer.SuspendLayout();
-            this.tabNPC.SuspendLayout();
-            this.tabBoss.SuspendLayout();
-            this.tabEnemy.SuspendLayout();
-            this.tabNote.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -134,7 +121,9 @@ namespace DM_Console
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.btnDelete);
             this.splitContainer1.Panel2.Controls.Add(this.lblNoteTitle);
+            this.splitContainer1.Panel2.Controls.Add(this.btnCreate);
             this.splitContainer1.Panel2.Controls.Add(this.txtNotes);
             this.splitContainer1.Panel2.Controls.Add(this.tabControl);
             this.splitContainer1.Size = new System.Drawing.Size(1932, 1016);
@@ -276,6 +265,16 @@ namespace DM_Console
             this.panSlotOne.Name = "panSlotOne";
             this.panSlotOne.Size = new System.Drawing.Size(374, 333);
             this.panSlotOne.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.Location = new System.Drawing.Point(313, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(53, 28);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox7
             // 
@@ -653,165 +652,73 @@ namespace DM_Console
             this.tabControl.Location = new System.Drawing.Point(3, 738);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(395, 275);
+            this.tabControl.Size = new System.Drawing.Size(395, 218);
             this.tabControl.TabIndex = 0;
             // 
             // tabPlayer
             // 
-            this.tabPlayer.Controls.Add(this.btnDeletePlayer);
-            this.tabPlayer.Controls.Add(this.btnCreatePlayer);
             this.tabPlayer.Location = new System.Drawing.Point(4, 29);
             this.tabPlayer.Name = "tabPlayer";
             this.tabPlayer.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPlayer.Size = new System.Drawing.Size(387, 242);
+            this.tabPlayer.Size = new System.Drawing.Size(387, 185);
             this.tabPlayer.TabIndex = 0;
             this.tabPlayer.Text = "Players";
             this.tabPlayer.UseVisualStyleBackColor = true;
             // 
-            // btnDeletePlayer
-            // 
-            this.btnDeletePlayer.Location = new System.Drawing.Point(202, 200);
-            this.btnDeletePlayer.Name = "btnDeletePlayer";
-            this.btnDeletePlayer.Size = new System.Drawing.Size(177, 36);
-            this.btnDeletePlayer.TabIndex = 3;
-            this.btnDeletePlayer.Text = "Delete";
-            this.btnDeletePlayer.UseVisualStyleBackColor = true;
-            // 
-            // btnCreatePlayer
-            // 
-            this.btnCreatePlayer.Location = new System.Drawing.Point(7, 200);
-            this.btnCreatePlayer.Name = "btnCreatePlayer";
-            this.btnCreatePlayer.Size = new System.Drawing.Size(177, 36);
-            this.btnCreatePlayer.TabIndex = 0;
-            this.btnCreatePlayer.Text = "Create";
-            this.btnCreatePlayer.UseVisualStyleBackColor = true;
-            // 
             // tabNPC
             // 
-            this.tabNPC.Controls.Add(this.btnDeleteNPC);
-            this.tabNPC.Controls.Add(this.btnCreateNPC);
-            this.tabNPC.Location = new System.Drawing.Point(4, 22);
+            this.tabNPC.Location = new System.Drawing.Point(4, 29);
             this.tabNPC.Name = "tabNPC";
             this.tabNPC.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNPC.Size = new System.Drawing.Size(387, 249);
+            this.tabNPC.Size = new System.Drawing.Size(387, 185);
             this.tabNPC.TabIndex = 1;
             this.tabNPC.Text = "NPC\'s";
             this.tabNPC.UseVisualStyleBackColor = true;
             // 
-            // btnDeleteNPC
-            // 
-            this.btnDeleteNPC.Location = new System.Drawing.Point(224, 193);
-            this.btnDeleteNPC.Name = "btnDeleteNPC";
-            this.btnDeleteNPC.Size = new System.Drawing.Size(87, 36);
-            this.btnDeleteNPC.TabIndex = 3;
-            this.btnDeleteNPC.Text = "Delete";
-            this.btnDeleteNPC.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateNPC
-            // 
-            this.btnCreateNPC.Location = new System.Drawing.Point(3, 193);
-            this.btnCreateNPC.Name = "btnCreateNPC";
-            this.btnCreateNPC.Size = new System.Drawing.Size(87, 36);
-            this.btnCreateNPC.TabIndex = 1;
-            this.btnCreateNPC.Text = "Create";
-            this.btnCreateNPC.UseVisualStyleBackColor = true;
-            // 
             // tabBoss
             // 
-            this.tabBoss.Controls.Add(this.btnDeleteBoss);
-            this.tabBoss.Controls.Add(this.btnCreateBoss);
-            this.tabBoss.Location = new System.Drawing.Point(4, 22);
+            this.tabBoss.Location = new System.Drawing.Point(4, 29);
             this.tabBoss.Name = "tabBoss";
-            this.tabBoss.Size = new System.Drawing.Size(387, 249);
+            this.tabBoss.Size = new System.Drawing.Size(387, 185);
             this.tabBoss.TabIndex = 2;
             this.tabBoss.Text = "Bosses";
             this.tabBoss.UseVisualStyleBackColor = true;
             // 
-            // btnDeleteBoss
-            // 
-            this.btnDeleteBoss.Location = new System.Drawing.Point(224, 193);
-            this.btnDeleteBoss.Name = "btnDeleteBoss";
-            this.btnDeleteBoss.Size = new System.Drawing.Size(87, 36);
-            this.btnDeleteBoss.TabIndex = 3;
-            this.btnDeleteBoss.Text = "Delete";
-            this.btnDeleteBoss.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateBoss
-            // 
-            this.btnCreateBoss.Location = new System.Drawing.Point(3, 193);
-            this.btnCreateBoss.Name = "btnCreateBoss";
-            this.btnCreateBoss.Size = new System.Drawing.Size(87, 36);
-            this.btnCreateBoss.TabIndex = 1;
-            this.btnCreateBoss.Text = "Create";
-            this.btnCreateBoss.UseVisualStyleBackColor = true;
-            // 
             // tabEnemy
             // 
-            this.tabEnemy.Controls.Add(this.btnDeleteEnemy);
-            this.tabEnemy.Controls.Add(this.btnCreateEnemy);
-            this.tabEnemy.Location = new System.Drawing.Point(4, 22);
+            this.tabEnemy.Location = new System.Drawing.Point(4, 29);
             this.tabEnemy.Name = "tabEnemy";
-            this.tabEnemy.Size = new System.Drawing.Size(387, 249);
+            this.tabEnemy.Size = new System.Drawing.Size(387, 185);
             this.tabEnemy.TabIndex = 4;
             this.tabEnemy.Text = "Enemies";
             this.tabEnemy.UseVisualStyleBackColor = true;
             // 
-            // btnDeleteEnemy
-            // 
-            this.btnDeleteEnemy.Location = new System.Drawing.Point(224, 193);
-            this.btnDeleteEnemy.Name = "btnDeleteEnemy";
-            this.btnDeleteEnemy.Size = new System.Drawing.Size(87, 36);
-            this.btnDeleteEnemy.TabIndex = 3;
-            this.btnDeleteEnemy.Text = "Delete";
-            this.btnDeleteEnemy.UseVisualStyleBackColor = true;
-            // 
-            // btnCreateEnemy
-            // 
-            this.btnCreateEnemy.Location = new System.Drawing.Point(3, 193);
-            this.btnCreateEnemy.Name = "btnCreateEnemy";
-            this.btnCreateEnemy.Size = new System.Drawing.Size(87, 36);
-            this.btnCreateEnemy.TabIndex = 1;
-            this.btnCreateEnemy.Text = "Create";
-            this.btnCreateEnemy.UseVisualStyleBackColor = true;
-            // 
             // tabNote
             // 
-            this.tabNote.Controls.Add(this.btnDeleteNote);
-            this.tabNote.Controls.Add(this.btnCreateNote);
-            this.tabNote.Location = new System.Drawing.Point(4, 22);
+            this.tabNote.Location = new System.Drawing.Point(4, 29);
             this.tabNote.Name = "tabNote";
-            this.tabNote.Size = new System.Drawing.Size(387, 249);
+            this.tabNote.Size = new System.Drawing.Size(387, 185);
             this.tabNote.TabIndex = 3;
             this.tabNote.Text = "Notes";
             this.tabNote.UseVisualStyleBackColor = true;
             // 
-            // btnDeleteNote
+            // btnDelete
             // 
-            this.btnDeleteNote.Location = new System.Drawing.Point(224, 193);
-            this.btnDeleteNote.Name = "btnDeleteNote";
-            this.btnDeleteNote.Size = new System.Drawing.Size(87, 36);
-            this.btnDeleteNote.TabIndex = 2;
-            this.btnDeleteNote.Text = "Delete";
-            this.btnDeleteNote.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(209, 968);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(177, 36);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // btnCreateNote
+            // btnCreate
             // 
-            this.btnCreateNote.Location = new System.Drawing.Point(3, 193);
-            this.btnCreateNote.Name = "btnCreateNote";
-            this.btnCreateNote.Size = new System.Drawing.Size(87, 36);
-            this.btnCreateNote.TabIndex = 1;
-            this.btnCreateNote.Text = "Create";
-            this.btnCreateNote.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Location = new System.Drawing.Point(313, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(53, 28);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCreate.Location = new System.Drawing.Point(14, 968);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.Size = new System.Drawing.Size(177, 36);
+            this.btnCreate.TabIndex = 0;
+            this.btnCreate.Text = "Create";
+            this.btnCreate.UseVisualStyleBackColor = true;
             // 
             // FrmConsole
             // 
@@ -833,11 +740,6 @@ namespace DM_Console
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl.ResumeLayout(false);
-            this.tabPlayer.ResumeLayout(false);
-            this.tabNPC.ResumeLayout(false);
-            this.tabBoss.ResumeLayout(false);
-            this.tabEnemy.ResumeLayout(false);
-            this.tabNote.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -849,20 +751,10 @@ namespace DM_Console
         private System.Windows.Forms.TabPage tabPlayer;
         private System.Windows.Forms.Label lblNoteTitle;
         private System.Windows.Forms.RichTextBox txtNotes;
-        private System.Windows.Forms.Button btnDeletePlayer;
-        private System.Windows.Forms.Button btnCreatePlayer;
         private System.Windows.Forms.TabPage tabNPC;
-        private System.Windows.Forms.Button btnDeleteNPC;
-        private System.Windows.Forms.Button btnCreateNPC;
         private System.Windows.Forms.TabPage tabBoss;
-        private System.Windows.Forms.Button btnDeleteBoss;
-        private System.Windows.Forms.Button btnCreateBoss;
         private System.Windows.Forms.TabPage tabEnemy;
-        private System.Windows.Forms.Button btnDeleteEnemy;
-        private System.Windows.Forms.Button btnCreateEnemy;
         private System.Windows.Forms.TabPage tabNote;
-        private System.Windows.Forms.Button btnDeleteNote;
-        private System.Windows.Forms.Button btnCreateNote;
         private System.Windows.Forms.Panel panSlotOne;
         private System.Windows.Forms.Panel panSlotFour;
         private System.Windows.Forms.Panel panSlotThree;
@@ -911,6 +803,8 @@ namespace DM_Console
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnCreate;
     }
 }
 
