@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="DM_Console.DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblBosses">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Strength" Type="varchar" MaxLength="50" />
+          <Property Name="Dexterity" Type="varchar" MaxLength="50" />
+          <Property Name="Constitution" Type="varchar" MaxLength="50" />
+          <Property Name="Intelligence" Type="varchar" MaxLength="50" />
+          <Property Name="Wisdom" Type="varchar" MaxLength="50" />
+          <Property Name="Charisma" Type="varchar" MaxLength="50" />
+          <Property Name="HitPoints" Type="varchar" MaxLength="50" />
+          <Property Name="ArmorClass" Type="varchar" MaxLength="50" />
+          <Property Name="Initiative" Type="varchar" MaxLength="50" />
+          <Property Name="Speed" Type="varchar" MaxLength="50" />
+          <Property Name="STSuccessCount" Type="int" />
+          <Property Name="STFailCount" Type="int" />
+          <Property Name="AdditionalDetails" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblEnemys">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Strength" Type="varchar" MaxLength="50" />
+          <Property Name="Dexterity" Type="varchar" MaxLength="50" />
+          <Property Name="Constitution" Type="varchar" MaxLength="50" />
+          <Property Name="Intelligence" Type="varchar" MaxLength="50" />
+          <Property Name="Wisdom" Type="varchar" MaxLength="50" />
+          <Property Name="Charisma" Type="varchar" MaxLength="50" />
+          <Property Name="HitPoints" Type="varchar" MaxLength="50" />
+          <Property Name="ArmorClass" Type="varchar" MaxLength="50" />
+          <Property Name="Initiative" Type="varchar" MaxLength="50" />
+          <Property Name="Speed" Type="varchar" MaxLength="50" />
+          <Property Name="STSuccessCount" Type="int" />
+          <Property Name="STFailCount" Type="int" />
+          <Property Name="AdditionalDetails" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblFriendlys">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Strength" Type="varchar" MaxLength="50" />
+          <Property Name="Dexterity" Type="varchar" MaxLength="50" />
+          <Property Name="Constitution" Type="varchar" MaxLength="50" />
+          <Property Name="Intelligence" Type="varchar" MaxLength="50" />
+          <Property Name="Wisdom" Type="varchar" MaxLength="50" />
+          <Property Name="Charisma" Type="varchar" MaxLength="50" />
+          <Property Name="HitPoints" Type="varchar" MaxLength="50" />
+          <Property Name="ArmorClass" Type="varchar" MaxLength="50" />
+          <Property Name="Initiative" Type="varchar" MaxLength="50" />
+          <Property Name="Speed" Type="varchar" MaxLength="50" />
+          <Property Name="STSuccessCount" Type="int" />
+          <Property Name="STFailCount" Type="int" />
+          <Property Name="AdditionalDetails" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="tblPlayers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Type" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Strength" Type="varchar" MaxLength="50" />
+          <Property Name="Dexterity" Type="varchar" MaxLength="50" />
+          <Property Name="Constitution" Type="varchar" MaxLength="50" />
+          <Property Name="Intelligence" Type="varchar" MaxLength="50" />
+          <Property Name="Wisdom" Type="varchar" MaxLength="50" />
+          <Property Name="Charisma" Type="varchar" MaxLength="50" />
+          <Property Name="HitPoints" Type="varchar" MaxLength="50" />
+          <Property Name="ArmorClass" Type="varchar" MaxLength="50" />
+          <Property Name="Initiative" Type="varchar" MaxLength="50" />
+          <Property Name="Speed" Type="varchar" MaxLength="50" />
+          <Property Name="STSuccessCount" Type="int" />
+          <Property Name="STFailCount" Type="int" />
+          <Property Name="AdditionalDetails" Type="varchar(max)" />
+        </EntityType>
+        <EntityContainer Name="DM_ConsoleDBModelStoreContainer">
+          <EntitySet Name="tblBosses" EntityType="Self.tblBosses" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblEnemys" EntityType="Self.tblEnemys" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblFriendlys" EntityType="Self.tblFriendlys" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblPlayers" EntityType="Self.tblPlayers" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DM_Console.DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblBoss">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Strength" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dexterity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Constitution" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Wisdom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Charisma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HitPoints" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ArmorClass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Initiative" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Speed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STSuccessCount" Type="Int32" />
+          <Property Name="STFailCount" Type="Int32" />
+          <Property Name="AdditionalDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblEnemy">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Strength" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dexterity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Constitution" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Wisdom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Charisma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HitPoints" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ArmorClass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Initiative" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Speed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STSuccessCount" Type="Int32" />
+          <Property Name="STFailCount" Type="Int32" />
+          <Property Name="AdditionalDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblFriendly">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Strength" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dexterity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Constitution" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Wisdom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Charisma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HitPoints" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ArmorClass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Initiative" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Speed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STSuccessCount" Type="Int32" />
+          <Property Name="STFailCount" Type="Int32" />
+          <Property Name="AdditionalDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tblPlayer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Strength" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Dexterity" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Constitution" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Wisdom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Charisma" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="HitPoints" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ArmorClass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Initiative" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Speed" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STSuccessCount" Type="Int32" />
+          <Property Name="STFailCount" Type="Int32" />
+          <Property Name="AdditionalDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblBosses" EntityType="Self.tblBoss" />
+          <EntitySet Name="tblEnemys" EntityType="Self.tblEnemy" />
+          <EntitySet Name="tblFriendlys" EntityType="Self.tblFriendly" />
+          <EntitySet Name="tblPlayers" EntityType="Self.tblPlayer" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DM_ConsoleDBModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="tblBosses">
+            <EntityTypeMapping TypeName="DM_Console.DBModel.tblBoss">
+              <MappingFragment StoreEntitySet="tblBosses">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Strength" ColumnName="Strength" />
+                <ScalarProperty Name="Dexterity" ColumnName="Dexterity" />
+                <ScalarProperty Name="Constitution" ColumnName="Constitution" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Wisdom" ColumnName="Wisdom" />
+                <ScalarProperty Name="Charisma" ColumnName="Charisma" />
+                <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+                <ScalarProperty Name="ArmorClass" ColumnName="ArmorClass" />
+                <ScalarProperty Name="Initiative" ColumnName="Initiative" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="STSuccessCount" ColumnName="STSuccessCount" />
+                <ScalarProperty Name="STFailCount" ColumnName="STFailCount" />
+                <ScalarProperty Name="AdditionalDetails" ColumnName="AdditionalDetails" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblEnemys">
+            <EntityTypeMapping TypeName="DM_Console.DBModel.tblEnemy">
+              <MappingFragment StoreEntitySet="tblEnemys">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Strength" ColumnName="Strength" />
+                <ScalarProperty Name="Dexterity" ColumnName="Dexterity" />
+                <ScalarProperty Name="Constitution" ColumnName="Constitution" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Wisdom" ColumnName="Wisdom" />
+                <ScalarProperty Name="Charisma" ColumnName="Charisma" />
+                <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+                <ScalarProperty Name="ArmorClass" ColumnName="ArmorClass" />
+                <ScalarProperty Name="Initiative" ColumnName="Initiative" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="STSuccessCount" ColumnName="STSuccessCount" />
+                <ScalarProperty Name="STFailCount" ColumnName="STFailCount" />
+                <ScalarProperty Name="AdditionalDetails" ColumnName="AdditionalDetails" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblFriendlys">
+            <EntityTypeMapping TypeName="DM_Console.DBModel.tblFriendly">
+              <MappingFragment StoreEntitySet="tblFriendlys">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Strength" ColumnName="Strength" />
+                <ScalarProperty Name="Dexterity" ColumnName="Dexterity" />
+                <ScalarProperty Name="Constitution" ColumnName="Constitution" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Wisdom" ColumnName="Wisdom" />
+                <ScalarProperty Name="Charisma" ColumnName="Charisma" />
+                <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+                <ScalarProperty Name="ArmorClass" ColumnName="ArmorClass" />
+                <ScalarProperty Name="Initiative" ColumnName="Initiative" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="STSuccessCount" ColumnName="STSuccessCount" />
+                <ScalarProperty Name="STFailCount" ColumnName="STFailCount" />
+                <ScalarProperty Name="AdditionalDetails" ColumnName="AdditionalDetails" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblPlayers">
+            <EntityTypeMapping TypeName="DM_Console.DBModel.tblPlayer">
+              <MappingFragment StoreEntitySet="tblPlayers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Strength" ColumnName="Strength" />
+                <ScalarProperty Name="Dexterity" ColumnName="Dexterity" />
+                <ScalarProperty Name="Constitution" ColumnName="Constitution" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Wisdom" ColumnName="Wisdom" />
+                <ScalarProperty Name="Charisma" ColumnName="Charisma" />
+                <ScalarProperty Name="HitPoints" ColumnName="HitPoints" />
+                <ScalarProperty Name="ArmorClass" ColumnName="ArmorClass" />
+                <ScalarProperty Name="Initiative" ColumnName="Initiative" />
+                <ScalarProperty Name="Speed" ColumnName="Speed" />
+                <ScalarProperty Name="STSuccessCount" ColumnName="STSuccessCount" />
+                <ScalarProperty Name="STFailCount" ColumnName="STFailCount" />
+                <ScalarProperty Name="AdditionalDetails" ColumnName="AdditionalDetails" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
