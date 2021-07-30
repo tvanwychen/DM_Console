@@ -29,19 +29,19 @@ namespace DM_Console
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBxCha = new System.Windows.Forms.TextBox();
+            this.txtBxInt = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtBoxWis = new System.Windows.Forms.TextBox();
+            this.txtBxCon = new System.Windows.Forms.TextBox();
+            this.txtBxDex = new System.Windows.Forms.TextBox();
+            this.txtBxSpd = new System.Windows.Forms.TextBox();
+            this.txtBxHP = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtBxAC = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtBxDetail = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,34 +50,34 @@ namespace DM_Console
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Type = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtBxStr = new System.Windows.Forms.TextBox();
+            this.txtBxName = new System.Windows.Forms.TextBox();
+            this.cmbBxType = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox7
+            // txtBxCha
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(476, 122);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(78, 53);
-            this.textBox7.TabIndex = 64;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxCha.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxCha.Location = new System.Drawing.Point(476, 122);
+            this.txtBxCha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxCha.Multiline = true;
+            this.txtBxCha.Name = "txtBxCha";
+            this.txtBxCha.Size = new System.Drawing.Size(78, 53);
+            this.txtBxCha.TabIndex = 64;
+            this.txtBxCha.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txtBxInt
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(290, 122);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 53);
-            this.textBox5.TabIndex = 62;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxInt.Location = new System.Drawing.Point(290, 122);
+            this.txtBxInt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxInt.Multiline = true;
+            this.txtBxInt.Name = "txtBxInt";
+            this.txtBxInt.Size = new System.Drawing.Size(78, 53);
+            this.txtBxInt.TabIndex = 62;
+            this.txtBxInt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label14
             // 
@@ -101,60 +101,60 @@ namespace DM_Console
             this.label12.Text = "AC";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
+            // txtBoxWis
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(382, 122);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(78, 53);
-            this.textBox6.TabIndex = 63;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxWis.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxWis.Location = new System.Drawing.Point(382, 122);
+            this.txtBoxWis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBoxWis.Multiline = true;
+            this.txtBoxWis.Name = "txtBoxWis";
+            this.txtBoxWis.Size = new System.Drawing.Size(78, 53);
+            this.txtBoxWis.TabIndex = 63;
+            this.txtBoxWis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // txtBxCon
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(196, 122);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(78, 53);
-            this.textBox4.TabIndex = 61;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxCon.Location = new System.Drawing.Point(196, 122);
+            this.txtBxCon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxCon.Multiline = true;
+            this.txtBxCon.Name = "txtBxCon";
+            this.txtBxCon.Size = new System.Drawing.Size(78, 53);
+            this.txtBxCon.TabIndex = 61;
+            this.txtBxCon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // txtBxDex
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(104, 122);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 53);
-            this.textBox3.TabIndex = 60;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxDex.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxDex.Location = new System.Drawing.Point(104, 122);
+            this.txtBxDex.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxDex.Multiline = true;
+            this.txtBxDex.Name = "txtBxDex";
+            this.txtBxDex.Size = new System.Drawing.Size(78, 53);
+            this.txtBxDex.TabIndex = 60;
+            this.txtBxDex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox11
+            // txtBxSpd
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(333, 226);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(78, 50);
-            this.textBox11.TabIndex = 56;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxSpd.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxSpd.Location = new System.Drawing.Point(333, 226);
+            this.txtBxSpd.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxSpd.Multiline = true;
+            this.txtBxSpd.Name = "txtBxSpd";
+            this.txtBxSpd.Size = new System.Drawing.Size(78, 50);
+            this.txtBxSpd.TabIndex = 56;
+            this.txtBxSpd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox8
+            // txtBxHP
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(158, 226);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(78, 50);
-            this.textBox8.TabIndex = 51;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxHP.Location = new System.Drawing.Point(158, 226);
+            this.txtBxHP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxHP.Multiline = true;
+            this.txtBxHP.Name = "txtBxHP";
+            this.txtBxHP.Size = new System.Drawing.Size(78, 50);
+            this.txtBxHP.TabIndex = 51;
+            this.txtBxHP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -167,16 +167,16 @@ namespace DM_Console
             this.label8.Text = "Additional Details";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox9
+            // txtBxAC
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(247, 226);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(78, 50);
-            this.textBox9.TabIndex = 54;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxAC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxAC.Location = new System.Drawing.Point(247, 226);
+            this.txtBxAC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxAC.Multiline = true;
+            this.txtBxAC.Name = "txtBxAC";
+            this.txtBxAC.Size = new System.Drawing.Size(78, 50);
+            this.txtBxAC.TabIndex = 54;
+            this.txtBxAC.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label11
             // 
@@ -189,14 +189,14 @@ namespace DM_Console
             this.label11.Text = "HP";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // richTextBox1
+            // txtBxDetail
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(10, 323);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(542, 187);
-            this.richTextBox1.TabIndex = 49;
-            this.richTextBox1.Text = "";
+            this.txtBxDetail.Location = new System.Drawing.Point(10, 323);
+            this.txtBxDetail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxDetail.Name = "txtBxDetail";
+            this.txtBxDetail.Size = new System.Drawing.Size(542, 187);
+            this.txtBxDetail.TabIndex = 49;
+            this.txtBxDetail.Text = "";
             // 
             // label7
             // 
@@ -286,34 +286,34 @@ namespace DM_Console
             this.Type.Text = "Type";
             this.Type.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox2
+            // txtBxStr
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(10, 122);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 53);
-            this.textBox2.TabIndex = 40;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxStr.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxStr.Location = new System.Drawing.Point(10, 122);
+            this.txtBxStr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxStr.Multiline = true;
+            this.txtBxStr.Name = "txtBxStr";
+            this.txtBxStr.Size = new System.Drawing.Size(78, 53);
+            this.txtBxStr.TabIndex = 40;
+            this.txtBxStr.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // txtBxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(237, 42);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 28);
-            this.textBox1.TabIndex = 39;
+            this.txtBxName.Location = new System.Drawing.Point(237, 42);
+            this.txtBxName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxName.Multiline = true;
+            this.txtBxName.Name = "txtBxName";
+            this.txtBxName.Size = new System.Drawing.Size(256, 28);
+            this.txtBxName.TabIndex = 39;
             // 
-            // comboBox1
+            // cmbBxType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(44, 42);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 28);
-            this.comboBox1.TabIndex = 38;
+            this.cmbBxType.FormattingEnabled = true;
+            this.cmbBxType.Location = new System.Drawing.Point(44, 42);
+            this.cmbBxType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cmbBxType.Name = "cmbBxType";
+            this.cmbBxType.Size = new System.Drawing.Size(180, 28);
+            this.cmbBxType.TabIndex = 38;
             // 
             // btnSubmit
             // 
@@ -342,19 +342,19 @@ namespace DM_Console
             this.ClientSize = new System.Drawing.Size(566, 576);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtBxCha);
+            this.Controls.Add(this.txtBxInt);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txtBoxWis);
+            this.Controls.Add(this.txtBxCon);
+            this.Controls.Add(this.txtBxDex);
+            this.Controls.Add(this.txtBxSpd);
+            this.Controls.Add(this.txtBxHP);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtBxAC);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.txtBxDetail);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -363,10 +363,11 @@ namespace DM_Console
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Type);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtBxStr);
+            this.Controls.Add(this.txtBxName);
+            this.Controls.Add(this.cmbBxType);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "CharCardCreator";
             this.Text = "CharacterCardCreator";
@@ -377,19 +378,19 @@ namespace DM_Console
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBxCha;
+        private System.Windows.Forms.TextBox txtBxInt;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtBoxWis;
+        private System.Windows.Forms.TextBox txtBxCon;
+        private System.Windows.Forms.TextBox txtBxDex;
+        private System.Windows.Forms.TextBox txtBxSpd;
+        private System.Windows.Forms.TextBox txtBxHP;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtBxAC;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox txtBxDetail;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -398,9 +399,9 @@ namespace DM_Console
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Type;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtBxStr;
+        private System.Windows.Forms.TextBox txtBxName;
+        private System.Windows.Forms.ComboBox cmbBxType;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnCancel;
     }

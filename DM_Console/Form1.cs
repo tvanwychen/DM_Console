@@ -20,7 +20,22 @@ namespace DM_Console
         private void btnCreate_Click(object sender, EventArgs e)
         {
             Form CharCard = new CharCardCreator();
-            CharCard.Show();
+            CharCard.ShowDialog();
+        }
+
+        private void btnCreatNote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDeletNote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

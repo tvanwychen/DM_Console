@@ -88,6 +88,8 @@ namespace DM_Console
             this.tabNote = new System.Windows.Forms.TabPage();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
+            this.btnCreatNote = new System.Windows.Forms.Button();
+            this.btnDeletNote = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -95,6 +97,7 @@ namespace DM_Console
             this.panSlotOne.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl.SuspendLayout();
+            this.tabNote.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -695,6 +698,8 @@ namespace DM_Console
             // 
             // tabNote
             // 
+            this.tabNote.Controls.Add(this.btnDeletNote);
+            this.tabNote.Controls.Add(this.btnCreatNote);
             this.tabNote.Location = new System.Drawing.Point(4, 29);
             this.tabNote.Name = "tabNote";
             this.tabNote.Size = new System.Drawing.Size(387, 185);
@@ -710,6 +715,7 @@ namespace DM_Console
             this.btnDelete.TabIndex = 3;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCreate
             // 
@@ -720,6 +726,26 @@ namespace DM_Console
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
             this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
+            // 
+            // btnCreatNote
+            // 
+            this.btnCreatNote.Location = new System.Drawing.Point(269, 146);
+            this.btnCreatNote.Name = "btnCreatNote";
+            this.btnCreatNote.Size = new System.Drawing.Size(110, 27);
+            this.btnCreatNote.TabIndex = 1;
+            this.btnCreatNote.Text = "Create";
+            this.btnCreatNote.UseVisualStyleBackColor = true;
+            this.btnCreatNote.Click += new System.EventHandler(this.btnCreatNote_Click);
+            // 
+            // btnDeletNote
+            // 
+            this.btnDeletNote.Location = new System.Drawing.Point(7, 146);
+            this.btnDeletNote.Name = "btnDeletNote";
+            this.btnDeletNote.Size = new System.Drawing.Size(117, 27);
+            this.btnDeletNote.TabIndex = 4;
+            this.btnDeletNote.Text = "Delete";
+            this.btnDeletNote.UseVisualStyleBackColor = true;
+            this.btnDeletNote.Click += new System.EventHandler(this.btnDeletNote_Click);
             // 
             // FrmConsole
             // 
@@ -741,6 +767,7 @@ namespace DM_Console
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl.ResumeLayout(false);
+            this.tabNote.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -806,6 +833,8 @@ namespace DM_Console
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreate;
+        private System.Windows.Forms.Button btnDeletNote;
+        private System.Windows.Forms.Button btnCreatNote;
     }
 }
 

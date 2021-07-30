@@ -24,7 +24,14 @@ namespace DM_Console
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-
+            if (cmbBxType.Text != "" && txtBxName.Text != "")
+            {
+                
+            }
+            else
+            {
+                MessageBox.Show("A type and a Name is required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
