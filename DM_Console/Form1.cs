@@ -17,12 +17,6 @@ namespace DM_Console
         public FrmConsole()
         {
             InitializeComponent();
-
-            using (Entities dc = new Entities())
-            {
-                DbContextTransaction transaction = null;
-
-            }
         }
     }
 }
