@@ -66,6 +66,7 @@
     <Build Include="Tables\tblEnemys.sql" />
     <Build Include="Tables\tblFriendlys.sql" />
     <Build Include="Tables\tblBosses.sql" />
+    <Build Include="Tables\tblFilePath.sql" />
   </ItemGroup>
   <ItemGroup>
     <PreDeploy Include="PreDeployment\Script.PreDeployment1.sql" />
@@ -76,6 +77,7 @@
     <None Include="PostDeployment\DefaultData\friendly.sql" />
     <None Include="PostDeployment\DefaultData\boss.sql" />
     <None Include="local.publish.xml" />
+    <None Include="PostDeployment\DefaultData\filepath.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="PostDeployment\Script.PostDeployment1.sql" />

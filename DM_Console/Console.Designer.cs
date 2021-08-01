@@ -84,12 +84,11 @@ namespace DM_Console
             this.txtNotes = new System.Windows.Forms.RichTextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPlayer = new System.Windows.Forms.TabPage();
-            this.tabNPC = new System.Windows.Forms.TabPage();
+            this.tabFriendly = new System.Windows.Forms.TabPage();
             this.tabBoss = new System.Windows.Forms.TabPage();
             this.tabEnemy = new System.Windows.Forms.TabPage();
             this.tabNote = new System.Windows.Forms.TabPage();
-            this.btnDeletNote = new System.Windows.Forms.Button();
-            this.btnCreatNote = new System.Windows.Forms.Button();
+            this.btnFilePath = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -668,7 +667,7 @@ namespace DM_Console
             // 
             this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.tabPlayer);
-            this.tabControl.Controls.Add(this.tabNPC);
+            this.tabControl.Controls.Add(this.tabFriendly);
             this.tabControl.Controls.Add(this.tabBoss);
             this.tabControl.Controls.Add(this.tabEnemy);
             this.tabControl.Controls.Add(this.tabNote);
@@ -688,15 +687,15 @@ namespace DM_Console
             this.tabPlayer.Text = "Players";
             this.tabPlayer.UseVisualStyleBackColor = true;
             // 
-            // tabNPC
+            // tabFriendly
             // 
-            this.tabNPC.Location = new System.Drawing.Point(4, 29);
-            this.tabNPC.Name = "tabNPC";
-            this.tabNPC.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNPC.Size = new System.Drawing.Size(387, 185);
-            this.tabNPC.TabIndex = 1;
-            this.tabNPC.Text = "NPC\'s";
-            this.tabNPC.UseVisualStyleBackColor = true;
+            this.tabFriendly.Location = new System.Drawing.Point(4, 29);
+            this.tabFriendly.Name = "tabFriendly";
+            this.tabFriendly.Padding = new System.Windows.Forms.Padding(3);
+            this.tabFriendly.Size = new System.Drawing.Size(387, 185);
+            this.tabFriendly.TabIndex = 1;
+            this.tabFriendly.Text = "Friendlies";
+            this.tabFriendly.UseVisualStyleBackColor = true;
             // 
             // tabBoss
             // 
@@ -718,8 +717,7 @@ namespace DM_Console
             // 
             // tabNote
             // 
-            this.tabNote.Controls.Add(this.btnDeletNote);
-            this.tabNote.Controls.Add(this.btnCreatNote);
+            this.tabNote.Controls.Add(this.btnFilePath);
             this.tabNote.Location = new System.Drawing.Point(4, 29);
             this.tabNote.Name = "tabNote";
             this.tabNote.Size = new System.Drawing.Size(387, 185);
@@ -727,25 +725,15 @@ namespace DM_Console
             this.tabNote.Text = "Notes";
             this.tabNote.UseVisualStyleBackColor = true;
             // 
-            // btnDeletNote
+            // btnFilePath
             // 
-            this.btnDeletNote.Location = new System.Drawing.Point(7, 146);
-            this.btnDeletNote.Name = "btnDeletNote";
-            this.btnDeletNote.Size = new System.Drawing.Size(117, 27);
-            this.btnDeletNote.TabIndex = 4;
-            this.btnDeletNote.Text = "Delete";
-            this.btnDeletNote.UseVisualStyleBackColor = true;
-            this.btnDeletNote.Click += new System.EventHandler(this.btnDeletNote_Click);
-            // 
-            // btnCreatNote
-            // 
-            this.btnCreatNote.Location = new System.Drawing.Point(269, 146);
-            this.btnCreatNote.Name = "btnCreatNote";
-            this.btnCreatNote.Size = new System.Drawing.Size(110, 27);
-            this.btnCreatNote.TabIndex = 1;
-            this.btnCreatNote.Text = "Create";
-            this.btnCreatNote.UseVisualStyleBackColor = true;
-            this.btnCreatNote.Click += new System.EventHandler(this.btnCreatNote_Click);
+            this.btnFilePath.Location = new System.Drawing.Point(290, 156);
+            this.btnFilePath.Name = "btnFilePath";
+            this.btnFilePath.Size = new System.Drawing.Size(94, 26);
+            this.btnFilePath.TabIndex = 4;
+            this.btnFilePath.Text = "File Path";
+            this.btnFilePath.UseVisualStyleBackColor = true;
+            this.btnFilePath.Click += new System.EventHandler(this.btnFilePath_Click);
             // 
             // FrmConsole
             // 
@@ -779,7 +767,7 @@ namespace DM_Console
         private System.Windows.Forms.TabPage tabPlayer;
         private System.Windows.Forms.Label lblNoteTitle;
         private System.Windows.Forms.RichTextBox txtNotes;
-        private System.Windows.Forms.TabPage tabNPC;
+        private System.Windows.Forms.TabPage tabFriendly;
         private System.Windows.Forms.TabPage tabBoss;
         private System.Windows.Forms.TabPage tabEnemy;
         private System.Windows.Forms.TabPage tabNote;
@@ -833,8 +821,7 @@ namespace DM_Console
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.Button btnDeletNote;
-        private System.Windows.Forms.Button btnCreatNote;
+        private System.Windows.Forms.Button btnFilePath;
     }
 }
 

@@ -33,7 +33,7 @@ namespace DM_Console
             this.txtBxInt = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.txtBoxWis = new System.Windows.Forms.TextBox();
+            this.txtBxWis = new System.Windows.Forms.TextBox();
             this.txtBxCon = new System.Windows.Forms.TextBox();
             this.txtBxDex = new System.Windows.Forms.TextBox();
             this.txtBxSpd = new System.Windows.Forms.TextBox();
@@ -101,16 +101,16 @@ namespace DM_Console
             this.label12.Text = "AC";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtBoxWis
+            // txtBxWis
             // 
-            this.txtBoxWis.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxWis.Location = new System.Drawing.Point(382, 122);
-            this.txtBoxWis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtBoxWis.Multiline = true;
-            this.txtBoxWis.Name = "txtBoxWis";
-            this.txtBoxWis.Size = new System.Drawing.Size(78, 53);
-            this.txtBoxWis.TabIndex = 63;
-            this.txtBoxWis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBxWis.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxWis.Location = new System.Drawing.Point(382, 122);
+            this.txtBxWis.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtBxWis.Multiline = true;
+            this.txtBxWis.Name = "txtBxWis";
+            this.txtBxWis.Size = new System.Drawing.Size(78, 53);
+            this.txtBxWis.TabIndex = 63;
+            this.txtBxWis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtBxCon
             // 
@@ -346,7 +346,7 @@ namespace DM_Console
             this.Controls.Add(this.txtBxInt);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.txtBoxWis);
+            this.Controls.Add(this.txtBxWis);
             this.Controls.Add(this.txtBxCon);
             this.Controls.Add(this.txtBxDex);
             this.Controls.Add(this.txtBxSpd);
@@ -382,7 +382,7 @@ namespace DM_Console
         private System.Windows.Forms.TextBox txtBxInt;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtBoxWis;
+        private System.Windows.Forms.TextBox txtBxWis;
         private System.Windows.Forms.TextBox txtBxCon;
         private System.Windows.Forms.TextBox txtBxDex;
         private System.Windows.Forms.TextBox txtBxSpd;
