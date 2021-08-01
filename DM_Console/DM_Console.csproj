@@ -109,6 +109,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DM_Console.BL.Models\DM_Console.BL.Models.csproj">
+      <Project>{a5742b4c-37c3-4314-aec1-e7aef939d10c}</Project>
+      <Name>DM_Console.BL.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DM_Console.PL\DM_Console.PL.csproj">
       <Project>{1994f726-ff99-432a-bebf-dd0e163e79ad}</Project>
       <Name>DM_Console.PL</Name>

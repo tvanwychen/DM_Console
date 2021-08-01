@@ -84,11 +84,15 @@ namespace DM_Console
             this.txtNotes = new System.Windows.Forms.RichTextBox();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPlayer = new System.Windows.Forms.TabPage();
+            this.lbxPlayers = new System.Windows.Forms.ListBox();
             this.tabFriendly = new System.Windows.Forms.TabPage();
             this.tabBoss = new System.Windows.Forms.TabPage();
             this.tabEnemy = new System.Windows.Forms.TabPage();
             this.tabNote = new System.Windows.Forms.TabPage();
-            this.btnFilePath = new System.Windows.Forms.Button();
+            this.lbxFriendlies = new System.Windows.Forms.ListBox();
+            this.lbxBosses = new System.Windows.Forms.ListBox();
+            this.lbxEnemies = new System.Windows.Forms.ListBox();
+            this.lbxNotes = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -96,6 +100,10 @@ namespace DM_Console
             this.panSlotOne.SuspendLayout();
             this.gbxSavingThrows.SuspendLayout();
             this.tabControl.SuspendLayout();
+            this.tabPlayer.SuspendLayout();
+            this.tabFriendly.SuspendLayout();
+            this.tabBoss.SuspendLayout();
+            this.tabEnemy.SuspendLayout();
             this.tabNote.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -679,6 +687,7 @@ namespace DM_Console
             // 
             // tabPlayer
             // 
+            this.tabPlayer.Controls.Add(this.lbxPlayers);
             this.tabPlayer.Location = new System.Drawing.Point(4, 29);
             this.tabPlayer.Name = "tabPlayer";
             this.tabPlayer.Padding = new System.Windows.Forms.Padding(3);
@@ -687,8 +696,18 @@ namespace DM_Console
             this.tabPlayer.Text = "Players";
             this.tabPlayer.UseVisualStyleBackColor = true;
             // 
+            // lbxPlayers
+            // 
+            this.lbxPlayers.FormattingEnabled = true;
+            this.lbxPlayers.ItemHeight = 20;
+            this.lbxPlayers.Location = new System.Drawing.Point(0, 0);
+            this.lbxPlayers.Name = "lbxPlayers";
+            this.lbxPlayers.Size = new System.Drawing.Size(387, 184);
+            this.lbxPlayers.TabIndex = 0;
+            // 
             // tabFriendly
             // 
+            this.tabFriendly.Controls.Add(this.lbxFriendlies);
             this.tabFriendly.Location = new System.Drawing.Point(4, 29);
             this.tabFriendly.Name = "tabFriendly";
             this.tabFriendly.Padding = new System.Windows.Forms.Padding(3);
@@ -699,6 +718,7 @@ namespace DM_Console
             // 
             // tabBoss
             // 
+            this.tabBoss.Controls.Add(this.lbxBosses);
             this.tabBoss.Location = new System.Drawing.Point(4, 29);
             this.tabBoss.Name = "tabBoss";
             this.tabBoss.Size = new System.Drawing.Size(387, 185);
@@ -708,6 +728,7 @@ namespace DM_Console
             // 
             // tabEnemy
             // 
+            this.tabEnemy.Controls.Add(this.lbxEnemies);
             this.tabEnemy.Location = new System.Drawing.Point(4, 29);
             this.tabEnemy.Name = "tabEnemy";
             this.tabEnemy.Size = new System.Drawing.Size(387, 185);
@@ -717,7 +738,7 @@ namespace DM_Console
             // 
             // tabNote
             // 
-            this.tabNote.Controls.Add(this.btnFilePath);
+            this.tabNote.Controls.Add(this.lbxNotes);
             this.tabNote.Location = new System.Drawing.Point(4, 29);
             this.tabNote.Name = "tabNote";
             this.tabNote.Size = new System.Drawing.Size(387, 185);
@@ -725,15 +746,41 @@ namespace DM_Console
             this.tabNote.Text = "Notes";
             this.tabNote.UseVisualStyleBackColor = true;
             // 
-            // btnFilePath
+            // lbxFriendlies
             // 
-            this.btnFilePath.Location = new System.Drawing.Point(290, 156);
-            this.btnFilePath.Name = "btnFilePath";
-            this.btnFilePath.Size = new System.Drawing.Size(94, 26);
-            this.btnFilePath.TabIndex = 4;
-            this.btnFilePath.Text = "File Path";
-            this.btnFilePath.UseVisualStyleBackColor = true;
-            this.btnFilePath.Click += new System.EventHandler(this.btnFilePath_Click);
+            this.lbxFriendlies.FormattingEnabled = true;
+            this.lbxFriendlies.ItemHeight = 20;
+            this.lbxFriendlies.Location = new System.Drawing.Point(0, 0);
+            this.lbxFriendlies.Name = "lbxFriendlies";
+            this.lbxFriendlies.Size = new System.Drawing.Size(387, 184);
+            this.lbxFriendlies.TabIndex = 1;
+            // 
+            // lbxBosses
+            // 
+            this.lbxBosses.FormattingEnabled = true;
+            this.lbxBosses.ItemHeight = 20;
+            this.lbxBosses.Location = new System.Drawing.Point(0, 0);
+            this.lbxBosses.Name = "lbxBosses";
+            this.lbxBosses.Size = new System.Drawing.Size(387, 184);
+            this.lbxBosses.TabIndex = 1;
+            // 
+            // lbxEnemies
+            // 
+            this.lbxEnemies.FormattingEnabled = true;
+            this.lbxEnemies.ItemHeight = 20;
+            this.lbxEnemies.Location = new System.Drawing.Point(0, 0);
+            this.lbxEnemies.Name = "lbxEnemies";
+            this.lbxEnemies.Size = new System.Drawing.Size(387, 184);
+            this.lbxEnemies.TabIndex = 1;
+            // 
+            // lbxNotes
+            // 
+            this.lbxNotes.FormattingEnabled = true;
+            this.lbxNotes.ItemHeight = 20;
+            this.lbxNotes.Location = new System.Drawing.Point(0, 0);
+            this.lbxNotes.Name = "lbxNotes";
+            this.lbxNotes.Size = new System.Drawing.Size(387, 184);
+            this.lbxNotes.TabIndex = 1;
             // 
             // FrmConsole
             // 
@@ -755,6 +802,10 @@ namespace DM_Console
             this.gbxSavingThrows.ResumeLayout(false);
             this.gbxSavingThrows.PerformLayout();
             this.tabControl.ResumeLayout(false);
+            this.tabPlayer.ResumeLayout(false);
+            this.tabFriendly.ResumeLayout(false);
+            this.tabBoss.ResumeLayout(false);
+            this.tabEnemy.ResumeLayout(false);
             this.tabNote.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -764,7 +815,6 @@ namespace DM_Console
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage tabPlayer;
         private System.Windows.Forms.Label lblNoteTitle;
         private System.Windows.Forms.RichTextBox txtNotes;
         private System.Windows.Forms.TabPage tabFriendly;
@@ -821,7 +871,12 @@ namespace DM_Console
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.Button btnFilePath;
+        private System.Windows.Forms.TabPage tabPlayer;
+        private System.Windows.Forms.ListBox lbxPlayers;
+        private System.Windows.Forms.ListBox lbxFriendlies;
+        private System.Windows.Forms.ListBox lbxBosses;
+        private System.Windows.Forms.ListBox lbxEnemies;
+        private System.Windows.Forms.ListBox lbxNotes;
     }
 }
 
