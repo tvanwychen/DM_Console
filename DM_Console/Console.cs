@@ -115,5 +115,17 @@ namespace DM_Console
                 MessageBox.Show("Else");
             }
         }
+
+        private void lbxNotes_DoubleClick(object sender, EventArgs e)
+        {
+            string notename = lbxNotes.SelectedValue.ToString();
+            Note displaynote = notes.Find(x => x.Name == notename);
+            txtNotes.Text = displaynote.Description;
+        }
+
+        private void txtNotes_Leave(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Updated");
+        }
     }
 }

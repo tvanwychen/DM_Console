@@ -86,12 +86,12 @@ namespace DM_Console
             this.tabPlayer = new System.Windows.Forms.TabPage();
             this.lbxPlayers = new System.Windows.Forms.ListBox();
             this.tabFriendly = new System.Windows.Forms.TabPage();
-            this.tabBoss = new System.Windows.Forms.TabPage();
-            this.tabEnemy = new System.Windows.Forms.TabPage();
-            this.tabNote = new System.Windows.Forms.TabPage();
             this.lbxFriendlies = new System.Windows.Forms.ListBox();
+            this.tabBoss = new System.Windows.Forms.TabPage();
             this.lbxBosses = new System.Windows.Forms.ListBox();
+            this.tabEnemy = new System.Windows.Forms.TabPage();
             this.lbxEnemies = new System.Windows.Forms.ListBox();
+            this.tabNote = new System.Windows.Forms.TabPage();
             this.lbxNotes = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -670,6 +670,7 @@ namespace DM_Console
             this.txtNotes.Size = new System.Drawing.Size(391, 689);
             this.txtNotes.TabIndex = 1;
             this.txtNotes.Text = "";
+            this.txtNotes.Leave += new System.EventHandler(this.txtNotes_Leave);
             // 
             // tabControl
             // 
@@ -708,43 +709,13 @@ namespace DM_Console
             // tabFriendly
             // 
             this.tabFriendly.Controls.Add(this.lbxFriendlies);
-            this.tabFriendly.Location = new System.Drawing.Point(4, 29);
+            this.tabFriendly.Location = new System.Drawing.Point(4, 22);
             this.tabFriendly.Name = "tabFriendly";
             this.tabFriendly.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFriendly.Size = new System.Drawing.Size(387, 185);
+            this.tabFriendly.Size = new System.Drawing.Size(387, 192);
             this.tabFriendly.TabIndex = 1;
             this.tabFriendly.Text = "Friendlies";
             this.tabFriendly.UseVisualStyleBackColor = true;
-            // 
-            // tabBoss
-            // 
-            this.tabBoss.Controls.Add(this.lbxBosses);
-            this.tabBoss.Location = new System.Drawing.Point(4, 29);
-            this.tabBoss.Name = "tabBoss";
-            this.tabBoss.Size = new System.Drawing.Size(387, 185);
-            this.tabBoss.TabIndex = 2;
-            this.tabBoss.Text = "Bosses";
-            this.tabBoss.UseVisualStyleBackColor = true;
-            // 
-            // tabEnemy
-            // 
-            this.tabEnemy.Controls.Add(this.lbxEnemies);
-            this.tabEnemy.Location = new System.Drawing.Point(4, 29);
-            this.tabEnemy.Name = "tabEnemy";
-            this.tabEnemy.Size = new System.Drawing.Size(387, 185);
-            this.tabEnemy.TabIndex = 4;
-            this.tabEnemy.Text = "Enemies";
-            this.tabEnemy.UseVisualStyleBackColor = true;
-            // 
-            // tabNote
-            // 
-            this.tabNote.Controls.Add(this.lbxNotes);
-            this.tabNote.Location = new System.Drawing.Point(4, 29);
-            this.tabNote.Name = "tabNote";
-            this.tabNote.Size = new System.Drawing.Size(387, 185);
-            this.tabNote.TabIndex = 3;
-            this.tabNote.Text = "Notes";
-            this.tabNote.UseVisualStyleBackColor = true;
             // 
             // lbxFriendlies
             // 
@@ -755,6 +726,16 @@ namespace DM_Console
             this.lbxFriendlies.Size = new System.Drawing.Size(387, 184);
             this.lbxFriendlies.TabIndex = 1;
             // 
+            // tabBoss
+            // 
+            this.tabBoss.Controls.Add(this.lbxBosses);
+            this.tabBoss.Location = new System.Drawing.Point(4, 22);
+            this.tabBoss.Name = "tabBoss";
+            this.tabBoss.Size = new System.Drawing.Size(387, 192);
+            this.tabBoss.TabIndex = 2;
+            this.tabBoss.Text = "Bosses";
+            this.tabBoss.UseVisualStyleBackColor = true;
+            // 
             // lbxBosses
             // 
             this.lbxBosses.FormattingEnabled = true;
@@ -763,6 +744,16 @@ namespace DM_Console
             this.lbxBosses.Name = "lbxBosses";
             this.lbxBosses.Size = new System.Drawing.Size(387, 184);
             this.lbxBosses.TabIndex = 1;
+            // 
+            // tabEnemy
+            // 
+            this.tabEnemy.Controls.Add(this.lbxEnemies);
+            this.tabEnemy.Location = new System.Drawing.Point(4, 22);
+            this.tabEnemy.Name = "tabEnemy";
+            this.tabEnemy.Size = new System.Drawing.Size(387, 192);
+            this.tabEnemy.TabIndex = 4;
+            this.tabEnemy.Text = "Enemies";
+            this.tabEnemy.UseVisualStyleBackColor = true;
             // 
             // lbxEnemies
             // 
@@ -773,6 +764,16 @@ namespace DM_Console
             this.lbxEnemies.Size = new System.Drawing.Size(387, 184);
             this.lbxEnemies.TabIndex = 1;
             // 
+            // tabNote
+            // 
+            this.tabNote.Controls.Add(this.lbxNotes);
+            this.tabNote.Location = new System.Drawing.Point(4, 22);
+            this.tabNote.Name = "tabNote";
+            this.tabNote.Size = new System.Drawing.Size(387, 192);
+            this.tabNote.TabIndex = 3;
+            this.tabNote.Text = "Notes";
+            this.tabNote.UseVisualStyleBackColor = true;
+            // 
             // lbxNotes
             // 
             this.lbxNotes.FormattingEnabled = true;
@@ -781,6 +782,7 @@ namespace DM_Console
             this.lbxNotes.Name = "lbxNotes";
             this.lbxNotes.Size = new System.Drawing.Size(387, 184);
             this.lbxNotes.TabIndex = 1;
+            this.lbxNotes.DoubleClick += new System.EventHandler(this.lbxNotes_DoubleClick);
             // 
             // FrmConsole
             // 
