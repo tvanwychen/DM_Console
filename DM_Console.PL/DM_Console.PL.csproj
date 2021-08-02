@@ -78,6 +78,9 @@
     <Compile Include="tblFriendly.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="tblNote.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="tblPlayer.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

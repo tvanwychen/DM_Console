@@ -13,10 +13,10 @@ namespace DM_Console.PL
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Entities : DbContext
+    public partial class Entities1 : DbContext
     {
-        public Entities()
-            : base("name=Entities")
+        public Entities1()
+            : base("name=Entities1")
         {
         }
     
@@ -28,6 +28,7 @@ namespace DM_Console.PL
         public virtual DbSet<tblBoss> tblBosses { get; set; }
         public virtual DbSet<tblEnemy> tblEnemys { get; set; }
         public virtual DbSet<tblFriendly> tblFriendlys { get; set; }
+        public virtual DbSet<tblNote> tblNotes { get; set; }
         public virtual DbSet<tblPlayer> tblPlayers { get; set; }
     }
 }

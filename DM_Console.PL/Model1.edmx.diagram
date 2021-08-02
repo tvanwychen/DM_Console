@@ -4,11 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="80b1b886dcf243bfb31735ae00e90b0e" Name="Diagram1">
+      <Diagram DiagramId="b75f8f8d21e141609aaba7d5113654a3" Name="Diagram1">
         <EntityTypeShape EntityType="DM_Console.DBModel.tblBoss" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DM_Console.DBModel.tblEnemy" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DM_Console.DBModel.tblFriendly" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DM_Console.DBModel.tblPlayer" Width="1.5" PointX="6.875" PointY="0.75" />
+        <EntityTypeShape EntityType="DM_Console.DBModel.tblNote" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DM_Console.DBModel.tblPlayer" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

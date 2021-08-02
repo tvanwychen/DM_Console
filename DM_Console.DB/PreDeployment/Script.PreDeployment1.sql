@@ -13,3 +13,4 @@ drop table if exists dbo.tblBosses
 drop table if exists dbo.tblEnemys
 drop table if exists dbo.tblFriendlys
 drop table if exists dbo.tblPlayers
+drop table if exists dbo.tblNotes

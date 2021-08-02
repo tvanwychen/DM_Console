@@ -21,12 +21,13 @@ namespace DM_Console
         List<Character> enemies = new List<Character>();
         List<Character> friendlies = new List<Character>();
         List<Character> bosses = new List<Character>();
+        List<Note> notes = new List<Note>();
         public FrmConsole()
         {
             InitializeComponent();
 
             //Pulling datafrom database
-            using (Entities dc = new Entities())
+            using (Entities1 dc = new Entities1())
             {                              
                 dc.tblPlayers.ToList().ForEach(x => players.Add(
                     new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
@@ -47,6 +48,8 @@ namespace DM_Console
                     new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
                         Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
                         Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
+
+                dc.tblNotes.ToList().ForEach(x => notes.Add(new Note { Id = x.Id, Name = x.Name, Description = x.Description }));
             }
 
             //Filtering names from Character objects to be displayed on UI listboxes
@@ -70,12 +73,18 @@ namespace DM_Console
             {
                 bossname.Add(boss.Name);
             }
+            List<string> notename = new List<string>();
+            foreach (Note note in notes)
+            {
+                notename.Add(note.Name);
+            }
 
             //Displaying character names on UI listboxes
             lbxPlayers.DataSource = playername;
             lbxEnemies.DataSource = enemyname;
             lbxFriendlies.DataSource = friedlyname;
             lbxBosses.DataSource = bossname;
+            lbxNotes.DataSource = notename;
         }
 
         private void btnCreate_Click(object sender, EventArgs e)

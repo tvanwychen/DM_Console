@@ -13,3 +13,4 @@ Post-Deployment Script Template
 :r .\DefaultData\enemy.sql
 :r .\DefaultData\friendly.sql
 :r .\DefaultData\player.sql
+:r .\DefaultData\note.sql

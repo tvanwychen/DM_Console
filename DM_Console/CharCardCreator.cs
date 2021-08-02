@@ -17,6 +17,7 @@ namespace DM_Console
         public CharCardCreator()
         {
             InitializeComponent();
+            //Adds character options to drop down list
             List<string> types = new List<string>();
             types.Add("Player");
             types.Add("Friendly");
@@ -33,12 +34,14 @@ namespace DM_Console
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            //Creates new character depending on what is selected in the Type drop down box
             if (cmbBxType.Text != "" && txtBxName.Text != "")
             {
-                using (Entities dc = new Entities())
+                using (Entities1 dc = new Entities1())
                 { 
                     if (cmbBxType.SelectedItem == "Player")
                     {
+                        //Creates new player
                         tblPlayer newplayer = new tblPlayer();
                         newplayer.Id = dc.tblPlayers.Any() ? dc.tblPlayers.Max(x => x.Id) + 1 : 1;
                         newplayer.Type = "Player";
@@ -63,6 +66,7 @@ namespace DM_Console
                     }
                     else if (cmbBxType.SelectedItem == "Friendly")
                     {
+                        //Creates new friendly
                         tblFriendly newfriendly = new tblFriendly();
                         newfriendly.Id = dc.tblPlayers.Any() ? dc.tblPlayers.Max(x => x.Id) + 1 : 1;
                         newfriendly.Type = "Friendly";
@@ -86,6 +90,7 @@ namespace DM_Console
                     }
                     else if (cmbBxType.SelectedItem == "Enemy")
                     {
+                        //Creates new enemy
                         tblEnemy newenemy = new tblEnemy();
                         newenemy.Id = dc.tblPlayers.Any() ? dc.tblPlayers.Max(x => x.Id) + 1 : 1;
                         newenemy.Type = "Enemy";
@@ -109,6 +114,7 @@ namespace DM_Console
                     }
                     else
                     {
+                        //Creates new boss
                         tblBoss newboss = new tblBoss();
                         newboss.Id = dc.tblPlayers.Any() ? dc.tblPlayers.Max(x => x.Id) + 1 : 1;
                         newboss.Type = "Boss";
