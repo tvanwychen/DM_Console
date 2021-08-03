@@ -22,10 +22,16 @@ namespace DM_Console
         List<Character> friendlies = new List<Character>();
         List<Character> bosses = new List<Character>();
         List<Note> notes = new List<Note>();
+        Note displaynote = new Note();
+        string notename;
         public FrmConsole()
         {
             InitializeComponent();
+            UpdateNotesBox();
+        }
 
+        public void UpdateNotesBox()
+        {
             //Pulling datafrom database
             using (Entities1 dc = new Entities1())
             {                              
@@ -118,14 +124,20 @@ namespace DM_Console
 
         private void lbxNotes_DoubleClick(object sender, EventArgs e)
         {
-            string notename = lbxNotes.SelectedValue.ToString();
-            Note displaynote = notes.Find(x => x.Name == notename);
+            notename = lbxNotes.SelectedValue.ToString();
+            displaynote = notes.Find(x => x.Name == notename);
             txtNotes.Text = displaynote.Description;
         }
 
         private void txtNotes_Leave(object sender, EventArgs e)
         {
-            //MessageBox.Show("Updated");
+            using (Entities1 dc = new Entities1())
+            {
+                tblNote row = dc.tblNotes.FirstOrDefault(x => x.Name == notename);
+                row.Description = txtNotes.Text;
+                dc.SaveChanges();
+                UpdateNotesBox();
+            }
         }
     }
 }
