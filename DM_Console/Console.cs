@@ -17,80 +17,109 @@ namespace DM_Console
     public partial class FrmConsole : Form
     {
         //Creating lists to store infromation from database
+        List<string> notename = new List<string>();
+
         List<Character> players = new List<Character>();
         List<Character> enemies = new List<Character>();
         List<Character> friendlies = new List<Character>();
         List<Character> bosses = new List<Character>();
         List<Note> notes = new List<Note>();
         Note displaynote = new Note();
-        string notename;
+        string notenames;
         public FrmConsole()
         {
             InitializeComponent();
             UpdateNotesBox();
+            UpdatePlayersBox();
+            UpdateEnemiesBox();
+            UpdateFriendliesBox();
+            UpdateBossesBox();
         }
 
         public void UpdateNotesBox()
         {
+            notename.Clear();
             //Pulling datafrom database
             using (Entities1 dc = new Entities1())
-            {                              
+            {                                                                                           
+                dc.tblNotes.ToList().ForEach(x => notes.Add(new Note { Id = x.Id, Name = x.Name, Description = x.Description }));
+            }
+            //Filtering names from Character objects to be displayed on UI listboxes                                              
+
+            foreach (Note note in notes)
+            {
+                notename.Add(note.Name);
+            }
+            //Displaying character names on UI listboxes
+            lbxNotes.DataSource = notename;
+        }
+
+        public void UpdatePlayersBox()
+        {
+            using (Entities1 dc = new Entities1())
+            {
                 dc.tblPlayers.ToList().ForEach(x => players.Add(
                     new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
                         Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
                         Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
-
-                dc.tblEnemys.ToList().ForEach(x => enemies.Add(
-                    new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
-                        Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
-                        Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
-
-                dc.tblFriendlys.ToList().ForEach(x => friendlies.Add(
-                    new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
-                        Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
-                        Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
-
-                dc.tblBosses.ToList().ForEach(x => bosses.Add(
-                    new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
-                        Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
-                        Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
-
-                dc.tblNotes.ToList().ForEach(x => notes.Add(new Note { Id = x.Id, Name = x.Name, Description = x.Description }));
             }
-
-            //Filtering names from Character objects to be displayed on UI listboxes
             List<string> playername = new List<string>();
             foreach (Character player in players)
             {
                 playername.Add(player.Name);
+            }
+            lbxPlayers.DataSource = playername;
+        }
+
+        public void UpdateEnemiesBox()
+        {
+            using (Entities1 dc = new Entities1())
+            {
+                dc.tblEnemys.ToList().ForEach(x => enemies.Add(
+                    new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
+                        Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
+                        Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
             }
             List<string> enemyname = new List<string>();
             foreach (Character enemy in enemies)
             {
                 enemyname.Add(enemy.Name);
             }
+            lbxEnemies.DataSource = enemyname;
+        }
+
+        public void UpdateFriendliesBox()
+        {
+            using (Entities1 dc = new Entities1())
+            {
+                dc.tblFriendlys.ToList().ForEach(x => friendlies.Add(
+                    new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
+                        Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
+                        Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
+            }
             List<string> friedlyname = new List<string>();
             foreach (Character friend in friendlies)
             {
                 friedlyname.Add(friend.Name);
+            }
+            lbxFriendlies.DataSource = friedlyname;
+        }
+
+        public void UpdateBossesBox()
+        {
+            using (Entities1 dc = new Entities1())
+            {
+                dc.tblBosses.ToList().ForEach(x => bosses.Add(
+                    new Character { Id = x.Id, Type = x.Type, Name = x.Name, Strength = x.Strength, Dexterity = x.Dexterity, Constitution = x.Constitution, 
+                        Intelligence = x.Intelligence, Wisdon = x.Wisdom, Charisma = x.Charisma, HitPoints = x.HitPoints, ArmorClass = x.ArmorClass, 
+                        Initiative = x.Initiative, Speed = x.Speed, STSuccessCount = (int)x.STSuccessCount, STFailCount = (int)x.STFailCount, AdditionDetails = x.AdditionalDetails}));
             }
             List<string> bossname = new List<string>();
             foreach (Character boss in bosses)
             {
                 bossname.Add(boss.Name);
             }
-            List<string> notename = new List<string>();
-            foreach (Note note in notes)
-            {
-                notename.Add(note.Name);
-            }
-
-            //Displaying character names on UI listboxes
-            lbxPlayers.DataSource = playername;
-            lbxEnemies.DataSource = enemyname;
-            lbxFriendlies.DataSource = friedlyname;
             lbxBosses.DataSource = bossname;
-            lbxNotes.DataSource = notename;
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
@@ -124,8 +153,8 @@ namespace DM_Console
 
         private void lbxNotes_DoubleClick(object sender, EventArgs e)
         {
-            notename = lbxNotes.SelectedValue.ToString();
-            displaynote = notes.Find(x => x.Name == notename);
+            notenames = lbxNotes.SelectedValue.ToString();
+            displaynote = notes.Find(x => x.Name == notenames);
             txtNotes.Text = displaynote.Description;
         }
 
@@ -133,7 +162,7 @@ namespace DM_Console
         {
             using (Entities1 dc = new Entities1())
             {
-                tblNote row = dc.tblNotes.FirstOrDefault(x => x.Name == notename);
+                tblNote row = dc.tblNotes.FirstOrDefault(x => x.Name == notenames);
                 row.Description = txtNotes.Text;
                 dc.SaveChanges();
                 UpdateNotesBox();
